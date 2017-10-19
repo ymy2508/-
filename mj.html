@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<textarea id="txt"></textarea>
+		<button id="bu">提交</button>
+	</body>
+</html>
+<script type="text/javascript">
+	var aa = document.getElementById('txt');
+	var bb = document.getElementById('bu');
+	aa.oninput=function(){
+		if(txt.value.length<60){
+			bb.onclick=function(){
+			alert('提交成功')				
+			}
+	}else{
+		bb.disabled=true;
+	}
+	}
+	
+</script>
